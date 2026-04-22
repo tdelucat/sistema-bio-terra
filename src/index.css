@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #059669; /* Emerald 600 */
+  --color-primary-dark: #064e3b; /* Emerald 900 */
+  --color-primary-light: #34d399; /* Emerald 400 */
+  --color-secondary: #0f172a; /* Slate 900 */
+  --color-accent: #34d399; /* Emerald 400 */
+  --color-brand-bg: #f8fafc; /* Slate 50 */
+  --color-border: #e2e8f0; /* Slate 200 */
+  --color-text-dim: #64748b; /* Slate 500 */
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap');
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-secondary);
+  font-family: var(--font-sans);
+}
+
+.high-density-table thead {
+  background-color: #f8fafc;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.high-density-table td {
+  padding: 8px 16px;
+  font-size: 11px;
+}
+
+.high-density-card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.sidebar-active {
+  background-color: #065f46; /* Emerald 800 */
+  border-left: 4px solid #34d399; /* Emerald 400 */
+}
